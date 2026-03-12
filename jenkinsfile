@@ -4,7 +4,7 @@ pipeline{
         stage("clone"){
             steps{
             retry(3){
-               sh "git https://github.com/sbtalk71/kube-jenkins-app.git"
+               git "https://github.com/sbtalk71/kube-jenkins-app.git"
                }
             }
         }
@@ -27,6 +27,7 @@ pipeline{
         }
 
 }
+
 
 
 
