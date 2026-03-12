@@ -21,9 +21,10 @@ pipeline{
         }
        stage("docker build"){
                    steps{
-                   sh "docker build -t kube-jenkins-app:${BUILD_NUMBER}" 
+                   sh "docker build -t kube-jenkins-app: %BUILD_NUMBER%"
                    }
                }
         }
 
 }
+
